@@ -11,7 +11,7 @@ git clone https://github.com/xax007/MSBuildAPICaller
 cd MSBuildAPICaller
 ```
 
-## Step 1: Build IEShim.cs on your Windows Machine
+## Step 1: Build IEShim.cs on your Windows Machine CMD **not powershell**
 ```
 C:\Windows\Microsoft.Net\Framework\v4.0.30319\csc.exe /reference:"Microsoft.Build.Framework.dll";"Microsoft.Build.Tasks.v4.0.dll";"Microsoft.Build.Utilities.v4.0.dll" /target:library IEShim.cs
 ```
